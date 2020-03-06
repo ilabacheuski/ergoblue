@@ -2,6 +2,12 @@
 
 ## Installation for development
 
+Dev dependency
+For emulating the device:
+```
+brew install qemu
+```
+
 1. Install `itmdump`
 ```bash
 cargo install itm;
