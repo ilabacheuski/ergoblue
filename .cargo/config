@@ -5,5 +5,9 @@ t = "test"
 r = "run"
 rr = "run --release"
 
+[target.thumbv7em-none-eabihf]
+# LLD (shipped with the Rust toolchain) is used as the default linker
+rustflags = ["-C", "link-arg=-Tlink.x"]
+
 [build]
 target = "thumbv7em-none-eabihf"
